@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/millpex/seL4/build/cmake_install.cmake",
+		"/home/millpex/seL4/build/libsel4/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

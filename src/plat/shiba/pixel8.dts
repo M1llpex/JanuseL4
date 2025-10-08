@@ -1,0 +1,42 @@
+/dts-v1/;
+
+/ {
+    compatible = "google,shiba";
+    interrupt-parent = <&gic>;
+    #address-cells = <2>;
+    #size-cells = <2>;
+
+    chosen {
+        bootargs = "console=ttyAMA0,115200n8";
+    };
+
+    memory@80000000 {
+        device_type = "memory";
+        reg = <0x0 0x80000000 0x0 0x80000000>;
+    };
+
+    gic: interrupt-controller@12340000 {
+        compatible = "arm,gic-v3";
+        #interrupt-cells = <3>;
+        #address-cells = <2>;
+        #size-cells = <2>;
+        interrupt-controller;
+        reg = <0x0 0x12340000 0x0 0x10000>,
+              <0x0 0x12350000 0x0 0x10000>;
+    };
+
+    /* ADD THESE TWO NODES: */
+    timer {
+        compatible = "arm,armv8-timer";
+        interrupts = <1 13 0xf08>,
+                     <1 14 0xf08>,
+                     <1 11 0xf08>,
+                     <1 10 0xf08>;
+        clock-frequency = <100000000>;
+    };
+
+    psci {
+        compatible = "arm,psci-1.0";
+        method = "smc";
+    };
+};

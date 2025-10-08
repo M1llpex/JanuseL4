@@ -1,0 +1,1 @@
+regen /home/millpex/seL4/build/gen_headers/plat/machine/devices_gen.h /home/millpex/seL4/build/kernel.dtb;/home/millpex/seL4/tools/hardware.yml;/home/millpex/seL4/tools/hardware_schema.yml;/home/millpex/seL4/tools/hardware_gen.py

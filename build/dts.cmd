@@ -1,0 +1,1 @@
+regen /home/millpex/seL4/build/kernel.dtb /home/millpex/seL4/src/plat/shiba/pixel8.dts

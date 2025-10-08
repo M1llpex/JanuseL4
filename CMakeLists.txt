@@ -5,6 +5,7 @@
 #
 
 cmake_minimum_required(VERSION 3.16.0)
+set(KernelPlatform "tensor-g3" CACHE STRING "Platform to build")
 include(CheckCCompilerFlag)
 
 include(${CMAKE_CURRENT_LIST_DIR}/configs/seL4Config.cmake)

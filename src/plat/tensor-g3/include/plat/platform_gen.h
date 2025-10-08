@@ -1,0 +1,4 @@
+#pragma once
+
+#define TIMER_CLOCK_HZ ULL_CONST(24576000)
+#define KERNEL_TIMER_IRQ 30

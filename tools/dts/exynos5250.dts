@@ -2101,7 +2101,7 @@
 
 			bridge@0 {
 				reg = < 0x00 >;
-				compatible = "toshiba,tc358764";
+				compatible = "totensor-g3,tc358764";
 				vddc-supply = < 0x45 >;
 				vddio-supply = < 0x46 >;
 				vddlvds-supply = < 0x47 >;

@@ -1,0 +1,10 @@
+# platforms/plat/shiba/Kconfig
+
+config PLAT_SHIBA
+    bool "Google Pixel 8 (shiba)"
+    depends on ARCH_AARCH64
+    select PLAT_SUPPORT_SECURE_BOOT
+    help
+        Target platform is the Google Pixel 8, codenamed 'shiba'.
+        This platform is based on the Google Tensor G3 SoC.
+
